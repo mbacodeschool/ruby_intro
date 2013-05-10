@@ -18,7 +18,7 @@ base_url = 'https://api.tropo.com/1.0/sessions?'
 my_final_url =  base_url + query_params
 
 puts "This is my final URL: #{my_final_url}"
-
+puts "Open this in a browser and you should be getting a text!"
 
 # Cut and paste that URL into a web browser
 

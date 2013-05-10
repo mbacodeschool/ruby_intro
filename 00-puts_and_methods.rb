@@ -32,4 +32,5 @@ my_method_to_put_strings_twice("This string appears twice.")
 
 my_method_to_put_strings_twice("Congratulations, you now understand methods and how to output code.")
 
+# Exercise 1
 # try outputting additional text to the screen below
