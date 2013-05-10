@@ -6,31 +6,16 @@
 # Everything starting with a "#", like this line, is a comment, it doesn't do anything.
 # It's just for you to leave notes to yourself - like this.  
 #
-# Talking about commenting in comments, so meta.
+# Talking about commenting in comments, that's meta.
 
 # The main way to get Ruby to output code is either through the method: puts
-puts "Hello, world."
+# puts stands for "PUT String (to screen)" 
 
-# puts is a method, methods are ways to encapsulate code and make it reusable
-# To call a method, you can do either: method argument1, argument2... or method(argument1, argument2)
+puts("Hello, world.")
 
-# In the case above, you were passing the argument "Hello, world." to the method puts.  "Hello, world." in this case is what we call a String.
-# Strings are surrounded by either "" or '' and are one of the core datatypes in programming.
+# Notice that we have ()'s around the string "Hello, world."
+# Ruby let's us ignore them as well - so we can just type:
 
+puts "Hello, world - I'm naked and without my ()s"
 
-
-# To create a new method, you do this:
-
-def my_method_to_put_strings_twice(my_string)
-  puts(my_string)
-  puts my_string
-end
-
-
-# and to call those methods, just use method_name(arg1, arg2)
-my_method_to_put_strings_twice("This string appears twice.")
-
-my_method_to_put_strings_twice("Congratulations, you now understand methods and how to output code.")
-
-# Exercise 1
-# try outputting additional text to the screen below
+# Exercise 1: Just "puts" more stuff to the screen (add code to this file and keep running it)

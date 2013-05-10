@@ -1,8 +1,9 @@
+# Variables
 
-# variables are ways to give names to values in your code
+# Variables are ways to give names to values in your code
 
 my_name = "David Yang"
-your_name = "" # <-- put your name here
+your_name = "YOUR NAME" # <-- put your name here between quotes
 
 puts "#{my_name} and #{your_name} are in the same classroom!"
 
@@ -23,14 +24,15 @@ puts "Will you still love me when I'm #{32 * 2}?"
 require 'date' # this line tells the Ruby interpreter to pull in some functionality relating to Dates
 
 today = Date.today()
+
 my_birthdate = Date.parse("29-05-2013")
+
 days_until_my_birthday = (my_birthdate - today).to_i # the to_i converts the resulting math into an "Integer", which means no fractions
 
 puts "There are only #{days_until_my_birthday} days until #{my_name}'s birthday... better start getting ready."
 
 # Exercise 1:
 # Try assigning some of your own variables and interpolating them into strings
-
 
 # Exercise 2:
 # Try doing some Date math and see how many years between now and various important dates in history.
