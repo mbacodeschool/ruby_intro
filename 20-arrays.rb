@@ -36,6 +36,8 @@ end
 puts("------ Now with each ------")
 
 # This task is so common in coding (going over the elements of an array) that there is a very common shorthand:
+my_friends = ["John", "Angie", "Brooke", "Peter"]
+
 my_friends.each do |friend|
   puts "#{friend} is a friend of mine."
 end
@@ -61,11 +63,31 @@ end
 # Use join (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-join) to create a single String of my_friends
 
 
+puts my_friends.join( ",       " )
+
 
 # Exercise 2:
 # Use map (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-map) to lowercase every person in my_friends
+
+my_lowercase_friends = my_friends.map { |friend|
+  friend.downcase
+}
+
+puts my_lowercase_friends
+
+my_lowercase_friends_and_a_number = my_lowercase_friends.map { |friend|
+  friend + "123"
+}
+
+puts my_lowercase_friends_and_a_number
 
 
 
 # Exercise 3:
 # Use select (http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-select) to select only favorite numbers under 20
+
+puts "============="
+puts my_friends_favorite_numbers.select { |number| number < 20 }
+
+
+puts my_friends.map { |friend| friend.downcase }.join(" -- ")
