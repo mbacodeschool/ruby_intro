@@ -14,26 +14,12 @@ else # only thing left
   puts "There only exactly 10 people in this class!"
 end
 
-# what passes for true?
 
-if true
-  puts "This will show up obviously (cause true is true)."
+# Exercise 1:
+# Iterate over the array of hacking_class and if a person has 4 letters in their name, print their name
+# if they have 5 letters in their name, print the reverse ("asdf".reverse
+# otherwise, print it lowercased ("asdf".downcase)
+
+hacking_class.each do |name|
+  # your code here
 end
-
-if 1
-  puts "This also shows up!"
-end
-
-if 0 
-  puts "This also shows up!"
-end
-
-if false
-  puts "This won't show up... false is false"
-end
-
-if nil
-  puts "This doesn't show up either... nil is a special value in Ruby that also means false in 'if' statements"
-end
-
-# That's it!
